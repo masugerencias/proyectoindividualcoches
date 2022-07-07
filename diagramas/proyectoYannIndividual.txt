@@ -1,0 +1,41 @@
+Yann
+Pienso que me podría ser interesante hacer una empresa de alquiler de coche. 
+
+Creo se puede obtener bastante informacion sobre una serie de coches clasificados segun puertas, caballos, furgonetas... y estas a su vez con sus caracteristicas o filtros.
+
+En mi idea, lo básico y mínimo es:
+- Mostrar en lista los coches disponibles para alquilar
+-tener un calendario para seleccionar las fechas de entrega del vehiculo y devolucion.
+- Filtrar estos por sus caracteristicas, puertas, KG maximo, vehiculo industrial, colores, potencia, precio.
+- Tanto de API como con JSON creados.
+- A la hora de pagar, que se guarden los datos del cliente en SQL.
+-LOGIN parte de cliente con lo contratado (factura, ticket, datos bancarios...) y un formulario o a ser posible un chat
+para intercambiar mensajes con un empleado.
+
+Para SQL la base de datos la formarán los datos de los usuarios que contraten los coches.
+Para MONGO: constará de los coches disponibles para el alquiler, poner filtros de los atributos de éstos.
+
+Si se puede...:
+	
+Parte empleado:
+	-Hacer la parte del conductor con la informacion de su alquier: coche, dias escogidos, dias restantes, reportar golpes...
+	- Un chat con el que intercambiar mensajes con el cliente.
+
+Pagina de inicio o al momento de la compra:
+	- Mapa interactivo para seleccionar punto de entrega y de devolución del coche.
+
+
+PROBLEMAS
+buscar api AUTODATA
+registro de usuario
+Mongo son objetos de los coches.
+
+que se cree una linea de conversacion.
+Complejizar un poco mas el tema del login
+filtro de caracteristicas de busqueda de coches.
+
+
+
+https://www.coches.net/km-0/
+
+https://bipicar.com/es/es
