@@ -16,6 +16,7 @@ const Bienvenido = () => {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({  email: datos  }),
+            //este email viene de session storage y es lo que metemos en la busqueda de SQL.
         };
     
         fetch("bienvenido", requestOptions)
@@ -32,7 +33,10 @@ const Bienvenido = () => {
     return (
     
     <div>
-        <p>hola   {infousuario ? infousuario[0].apellido : "lo  que quiera"}</p>
+        <p>{infousuario ? infousuario[0].nombre : "No tiene nombre"}</p>
+        <p>{infousuario ? infousuario[0].apellido : "No tiene apellido"}</p>
+        <p>{infousuario ? infousuario[0].email : "No tiene email"}</p>
+        <p>{infousuario ? infousuario[0].telefono : "No tiene telefono"}</p>
        
     </div>
      )

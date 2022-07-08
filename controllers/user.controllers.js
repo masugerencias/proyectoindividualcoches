@@ -46,7 +46,7 @@ const user = {
         connection.query(query3, (err, data) => {
             if (err) throw err;
             res.json(data)
-
+//la busqueda solo se hace con el email.
         })
     },
     

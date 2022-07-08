@@ -13,7 +13,7 @@ const vehiculos = {
         /*Nada mas meterse en este endpoint tienen que aparecer todos los vehiculos sin filtro especifico,
         osea, vertodos sería un filtro que contiene todos.
          */
-
+/* ESTA QUERY NO HACE FALTA SI QUIERO QUE SALGAN TODOS LOS RESULTADOS, EN EL FIND HAY QUE PONERLO VACIO */
         let query = {
         "marca" :  req.body.marca,
         "pais" : req.body.pais,
@@ -26,19 +26,16 @@ const vehiculos = {
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
             var dbo = db.db(mydb);
-            dbo.collection(coleccion).find({query}).toArray(function (err, result) {
-                if (err) throw err;
-                
-                console.log('aqui se muestran los resultados d ela bisqueda');
-                
-                db.close();
+            dbo.collection(coleccion).find({}).toArray(function (err, result) {
+                if (err) throw err;  
+                res.json(result)
                 
              });
              
         });
         //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
-
-        res.send('pesao')
+        
+        
     },
 
 
@@ -88,3 +85,6 @@ const vehiculos = {
 
 }
 module.exports = vehiculos
+
+
+

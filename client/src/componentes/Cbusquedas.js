@@ -7,21 +7,14 @@ const Cbusquedas=()=>{
 
 
 
-
-
-
-
-
-  
-
 return(
-<form class="row g-3">
+<div class="row g-3">
  
  
 <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Pais</label>
+    <label for="validationDefault04" class="form-label"></label>
     <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
+      <option selected disabled value="">País</option>
       <option>España</option>
       <option>Italia</option>
       <option>Francia</option>
@@ -33,53 +26,70 @@ return(
 
     </select>
   </div>
-{/* 
+
+
   <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Modelo</label>
+    <label for="validationDefault04" class="form-label"></label>
     <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+      <option selected disabled value="">Marca</option>
+      <option>Seat</option>
+      <option>Fiat</option>
+      <option>Citroen</option>
+      <option>Mercedes</option>
+      <option>Volkswagen</option>
+      <option>Aston Martin</option>
+      <option>Rolls Royce</option>
+      <option>Jaguar</option>
+      <option>Volvo</option>
+      <option>Triumph</option>
+      <option>MG</option>
+      <option>Ferrari</option>
+      <option>Lancia</option>
+      <option>BMW</option>
+
+
     </select>
   </div>
 
   <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Marca</label>
+    <label for="validationDefault04" class="form-label"></label>
     <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
+      <option selected disabled value="">Descapotable</option>
+      <option>Si</option>
+      <option>No</option>
+
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label"></label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Número de puertas</option>
+      <option>3</option>
+      <option>5</option>
+
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label"></label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Número de plazas</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+
+
     </select>
   </div>
 
-  <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Descapotable</label>
-    <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Número de puertas</label>
-    <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-3">
-    <label for="validationDefault04" class="form-label">Número de plazas</label>
-    <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-
- */}
+ 
 
   <div class="col-12">
     <br></br>
-    <button class="btn btn-primary" type="submit">Submit BUSCAR</button>
+    <button class="btn btn-primary" type="buton"> BUSCAR</button>
   </div>
-</form>
-
+</div>
+/*Al darle a este boton lo que quiero es que se haga la busqueda en mongo y que se me muestre en una pagina nueva que se llame RESULTADOS como el endppoinbt del back.  */
   
 
 
