@@ -9,7 +9,7 @@ import Dondemadrid from "../pages/Dondemadrid";
 import Dondebarcelona from "../pages/Dondebarcelona";
 import Resultados from "../pages/Resultados";
 import Bienvenido from "../pages/Bienvenido";
-
+import Busqueda from "../pages/Busqueda";
 
 
 const Main = () => {
@@ -26,9 +26,7 @@ const Main = () => {
         <Route path="/dondebarcelona" element={<Dondebarcelona/>} />
         <Route path="/resultados" element={<Resultados/>} />
         <Route path="/bienvenido" element={<Bienvenido/>} />
-
-
-
+        <Route path="/busqueda" element={<Busqueda/>} />
 
         </Routes>
     </div>

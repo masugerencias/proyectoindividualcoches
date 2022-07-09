@@ -165,4 +165,9 @@ flex-direction: column;
 
 
 
+
 /* ver todos los coches ACABA */
+.filtros{
+  display: flex;
+  flex-direction: column;
+  }

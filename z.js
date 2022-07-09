@@ -1,3 +1,28 @@
+/* {pais ? pais.map((msj,i) => <div>
+  {msj.marca},{msj.modelo}
+  </div>) : "el boton me va fatal, ntnces cuando pongo el map, no funciona nada"}  
+
+ */
+
+
+
+
+{/* <select class="form-select" aria-label="Default select example">
+  <option selected>Fitlro por país</option>
+  <option value="alemania">Alemania</option>
+  <option value="espana">España</option>
+  <option value="italia">Italia</option>
+  <option value="francia">Francia</option>
+  <option value="inglaterra">Inglaterra</option>
+  
+</select>,
+
+<button type="button" class="btn btn-dark">Dark</button>
+ */}
+
+
+
+
 
 /* buscarcoche:(req,res) => {
 

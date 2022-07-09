@@ -8,25 +8,18 @@ import { Link,useNavigate } from 'react-router-dom';
 
 
 /* en esta pagina seran los filtros de los coches de mongo */
-const Resultados = () => {
-    const [pais, setPais] = useState("");
+const Cfiltros = () => {
 
 /* aqui tienen que aparecer los resultados tras darle al boton de buscar, joder */
-
 const buscar = () => {
-           
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify( 
-          {
-          pais:pais})
-    };
 
-    fetch("busquedavehiculos", requestOptions)
-      .then((response) => response.json())
-      .then((response) =>setPais(response))         
-    } 
+
+
+
+
+}
+
+
     
   
     return (
@@ -90,9 +83,7 @@ const buscar = () => {
 
   {/* ESTE BOTON manda a ejecutar la funcion que va al back dentro de este componente. */}
         </div>
-      </div>,
-                <p>{pais ? pais[0].marca : ""}</p>,
-<p>aqui me tiene que aparecer un botn y el friltro coño</p>,
+      </div>,<p>aqui me tiene que aparecer un botn y el friltro coño</p>,
       /*Al darle a este boton lo que quiero es que se haga la busqueda en mongo y que se me muestre en una pagina nueva que se llame RESULTADOS como el endppoinbt del back.  */
 
       <button class="btn btn-dark"onClick={() => buscar()}>BUSCAR</button>
@@ -105,4 +96,4 @@ const buscar = () => {
   
     
 
-export default Resultados;
+export default Cfiltros;

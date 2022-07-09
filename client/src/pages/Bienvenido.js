@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import { Navigate, useNavigate } from "react-router-dom";
 
 import Clogin from "../componentes/Clogin";
 /* import { Link, useNavigate } from 'react-router-dom'; */
@@ -23,13 +24,19 @@ const Bienvenido = () => {
             .then((response) => response.json())
             .then((response) =>  {setInfousuario(response);
             console.log("funcionando")})
-
-
+            
     }, [])
 
-  
-    
- //
+
+    /* FUNCION DESCONECTAR */
+    const navigate = useNavigate();
+
+            function desconectar (){
+                    sessionStorage.clear();
+                    navigate('/');
+
+            }
+
     return (
     
     <div>
@@ -37,10 +44,13 @@ const Bienvenido = () => {
         <p>{infousuario ? infousuario[0].apellido : "No tiene apellido"}</p>
         <p>{infousuario ? infousuario[0].email : "No tiene email"}</p>
         <p>{infousuario ? infousuario[0].telefono : "No tiene telefono"}</p>
-       
-    </div>
-     )
+        <p>{infousuario ? "Administrador" :""}</p>
+        <button  class="btn btn-dark"  onClick={() => desconectar()}>Desconectar</button>
 
+    </div>
+
+     )
+     
 
 }
 export default Bienvenido;

@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
         
-    <Cnavbar/>     
+        <Cnavbar/>     
         <MainComponent />
         <Cfooter/>
     </div>

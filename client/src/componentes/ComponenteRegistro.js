@@ -27,6 +27,7 @@ const ComponenteRegistro = () => {
       navigate('/perfil'); 
       }
           },[registro])
+          /* esto que esta entre corchetes no sé que es */
   
 
 
@@ -83,15 +84,15 @@ const ComponenteRegistro = () => {
     <input type="password" className="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
   </div>
   <button class="btn btn-dark" onClick={() => enviarRegistro()}>CREAR CUENTA</button>
-  {registro ? "" : 
+  
    
-  //aqui tiene que cargarse la pagina de nuevo solo con login
-
+  {/* aqui tiene que cargarse la pagina de nuevo solo con login
+ */}
 
 
   
   
-  <p>nada</p>} 
+  
 
  </div>
 

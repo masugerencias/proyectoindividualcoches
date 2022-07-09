@@ -14,14 +14,14 @@ const vehiculos = {
         osea, vertodos sería un filtro que contiene todos.
          */
 /* ESTA QUERY NO HACE FALTA SI QUIERO QUE SALGAN TODOS LOS RESULTADOS, EN EL FIND HAY QUE PONERLO VACIO */
-        let query = {
+      /*   let query = {
         "marca" :  req.body.marca,
         "pais" : req.body.pais,
         "modelo" : req.body.modelo,
         "descapotable" : req.body.descapotable,
        "puertas" :req.body.puertas,
         "plazas" : req.body.plazas}
-        
+         */
     
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
@@ -39,11 +39,40 @@ const vehiculos = {
     },
 
 
+    busquedavehiculos: (req, res) => {
+        /*Nada mas meterse en este endpoint tienen que aparecer todos los vehiculos sin filtro especifico,
+        osea, vertodos sería un filtro que contiene todos.
+         */
+     /*  let query = {
+        "marca" :  req.body.marca,   
+         "pais" : req.body.pais,
+        "modelo" : req.body.modelo,
+        "descapotable" : req.body.descapotable,
+       "puertas" :req.body.puertas,
+        "plazas" : req.body.plazas } */
 
-    /* FILTRAR VEHICULOS
-    Cada filtro tiene que tener su enpoint? o como va lo de los filtros?
 
-    */
+      /* SOLO ME FUNCIONA CON UN FILTRO NADA MAS! */
+    
+        MongoClient.connect(url, function (err, db) {
+            if (err) throw err;
+            var dbo = db.db(mydb);
+            dbo.collection(coleccion).find({"pais":req.body.pais}).toArray(function (err, result) {
+                if (err) throw err;  
+                res.json(result)
+                
+             });
+             
+        });
+        //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
+        
+        
+    },
+
+
+
+
+    
 
 
 
@@ -72,8 +101,7 @@ const vehiculos = {
             dbo.collection(coleccion).updateOne(myquery, newvalues, function (err, res) {
                 if (err) throw err;
                 //no consigo imprimir ningun resultado
-                
-                db.close();
+                res.json(result)
             });
             
         });

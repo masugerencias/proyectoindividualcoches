@@ -7,16 +7,7 @@ import Cbusquedas from "../componentes/Cbusquedas";
 
 const Vercoches = () => {
   
-
-
-
-
-
-
-
-
-
-    
+   
     
         return(
             <div className="filtros">
