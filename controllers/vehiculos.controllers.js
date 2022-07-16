@@ -40,9 +40,7 @@ const vehiculos = {
 
 
     busquedavehiculos: (req, res) => {
-        /*Nada mas meterse en este endpoint tienen que aparecer todos los vehiculos sin filtro especifico,
-        osea, vertodos sería un filtro que contiene todos.
-         */
+      
      /*  let query = {
         "marca" :  req.body.marca,   
          "pais" : req.body.pais,
@@ -52,7 +50,6 @@ const vehiculos = {
         "plazas" : req.body.plazas } */
 
 
-      /* SOLO ME FUNCIONA CON UN FILTRO NADA MAS! */
     
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
@@ -68,6 +65,57 @@ const vehiculos = {
         
         
     },
+/* BUSQUEDA DE VEHICULOS DESCAPOTABLES */
+    descapotables: (req, res) => {
+   
+
+    MongoClient.connect(url, function (err, db) {
+        if (err) throw err;
+        var dbo = db.db(mydb);
+        dbo.collection(coleccion).find({"descapotable":req.body.descapotable}).toArray(function (err, result) {
+            if (err) throw err;  
+            res.json(result)
+         });    
+    });
+       
+    },
+/* la busqueda que hay en el find responde a como se llama en la coleccion. 
+req.body.puertas responde a lo que mete en el input al estado de usetate del compopnente, osea, lo que recoge del input*/
+
+busquedapuertas: (req, res) => {
+      
+       MongoClient.connect(url, function (err, db) {
+           if (err) throw err;
+           var dbo = db.db(mydb);
+           dbo.collection(coleccion).find({"puertas":req.body.puertas}).toArray(function (err, result) {
+               if (err) throw err;  
+               res.json(result)
+               
+            });
+            
+       });
+       //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
+       
+       
+   },
+
+   /* BUSQUEDA POR PLAZAS */
+busquedaplazas: (req, res) => {
+      
+    MongoClient.connect(url, function (err, db) {
+        if (err) throw err;
+        var dbo = db.db(mydb);
+        dbo.collection(coleccion).find({"plazas":req.body.plazas}).toArray(function (err, result) {
+            if (err) throw err;  
+            res.json(result)
+            
+         });
+         
+    });
+    //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
+    
+    
+},
 
 
 

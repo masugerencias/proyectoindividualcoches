@@ -11,7 +11,7 @@ const Bienvenido = () => {
 
     useEffect(() => {
  
-        let datos = sessionStorage.getItem('userLogin' )
+        let datos = sessionStorage.getItem('userLogin')
 
         const requestOptions = {
             method: "POST",

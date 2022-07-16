@@ -2,7 +2,7 @@ import './App.css';
 import Cnavbar from './componentes/Cnavbar';
 import Cfooter from './componentes/Cfooter';
 import MainComponent from './componentes/Main';
-import { BrowserRouter ,Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Ccarrousel from './componentes/Ccarrousel';
 
 function App() {

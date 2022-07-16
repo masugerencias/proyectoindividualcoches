@@ -12,7 +12,7 @@ const Vercoches = () => {
         return(
             <div className="filtros">
 
-            {Cbusquedas()}, {Cgrid()}
+            {Cbusquedas()} <br></br>{Cgrid()}
             </div>
         ) 
 

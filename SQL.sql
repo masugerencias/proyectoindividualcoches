@@ -34,7 +34,7 @@ CREATE TABLE Facturas (
 );
 select * from nuevos_usuarios;
 select * from facturas;
-#insert into nuevos_usuarios values (null,'yannnnn', 'poirotttt',true,'621016880','yann@gmail.commm','11223344');
+#insert into nuevos_usuarios values (null,'victor', 'poirot',1,'621016880','victor@gmail.com','1234','1234');
 #columnas con facturas dont match.
 #insert into facturas values (null, "123456789", "yann",120,2007-05-08,"11888888f",null);
 #insert into facturas values (null,'1234123412341234',500,'2020-06-20','11111111F',null);

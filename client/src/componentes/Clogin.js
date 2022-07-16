@@ -15,7 +15,7 @@ const navigate = useNavigate()
    
     useEffect(() => {
         if (login){
-        console.log('logon es true')
+        
         navigate('/bienvenido'); 
 
         sessionStorage.setItem("userLogin", email);

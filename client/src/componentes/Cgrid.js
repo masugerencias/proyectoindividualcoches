@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 const Cgrid=()=>{
   const [todoscoches, setTodoscoches] = useState("");
 
-  useEffect(() => {
+
  
       
     const requestOptions = {
@@ -19,11 +19,9 @@ const Cgrid=()=>{
 
     fetch("todoslosvehiculos", requestOptions)
       .then((response) => response.json())
-      .then((response) => {setTodoscoches(response);
-        console.log(todoscoches)})
-}, []) 
+      .then((response) => {setTodoscoches(response)})
 
-console.log(todoscoches);
+
 /* NO ME FUNCIONA ESTA HISTORIA DE LA FOTO
 let url1 = todoscoches[0].foto;
 const imagen1 = <img src={url1}/> 
@@ -35,15 +33,8 @@ return(
 <div>
 
 {todoscoches ? todoscoches.map((msj,i) => <div>
-  
- 
-
-
-  
-  <div class="row">
-
-   
-{/*     OFERTA 2*/}    
+    
+  <div class="row">   
 <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
         <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
@@ -55,14 +46,9 @@ return(
       </div>
     </div>
 
+    </div>  
 
- 
-   
-    </div>
-    
-   
-
-    </div>) : "el boton me va fatal, ntnces cuando pongo el map, no funciona nada"}  
+    </div>) : ""}  
  
     </div>
 
