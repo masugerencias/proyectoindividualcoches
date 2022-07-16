@@ -8,7 +8,6 @@ const Cpais = () =>{
     const [pais, setPais] = useState("");
 
     const realizarBusquedaPais = () => {
-           
           const requestOptions = {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -22,7 +21,7 @@ const Cpais = () =>{
           .then((response) =>{setPais(response);
                               console.log(response);
                             })
-      
+                       
     }
    
 return(
@@ -52,21 +51,30 @@ return(
     </Card>
     
     </Form>
-   {/*  {pais ? pais.map((pai, i) => {
-          return (<div>
-            <Card style={{ width: '18rem' }} key={i}>
-                <Card.Body>
-                <Card.Title>{pai.marca}</Card.Title>
-                <Card.Text>{pai.modelo}</Card.Text>
-                </Card.Body>
-            </Card>
-            </div>)
-        }) : ""}  */}
-     <p>{pais ? pais[0].marca : ""}</p> 
-     <p>{pais ? pais[1].marca : ""}</p> 
-
-
+   
     </div>
+
+    {pais ? pais.map((busqued, i) => {
+          return (
+            <Card style={{ width: '18rem' }} key={i}>
+              
+
+              <Card.Body>
+                <Card.Title>{busqued.modelo}</Card.Title>
+                <Card.Text>{busqued.marca}</Card.Text>
+                
+                <Button  variant="info">Info</Button>
+              </Card.Body>
+            </Card>
+          )
+        }) : <div>
+           
+
+        </div>}
+
+
+
+
      </div>
     
     

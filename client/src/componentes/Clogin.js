@@ -55,7 +55,9 @@ return (
     <input type="password" class="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
   </div>
  
-  <button class="btn btn-dark" >ENTRAR</button>
+  <button class="btn btn-dark" onClick={entrar()} >ENTRAR</button>
+
+  {login ? "" : <p>uusario incorrecto</p>} 
 
 
 
