@@ -171,3 +171,36 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   }
+
+
+  .gridCard{
+display: flex;
+  }
+
+  
+  .gridCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: space-between;
+  
+      }
+
+      .filtroCards{
+        display: flex;
+        align-content: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end; 
+        margin: 50px;
+        
+      }
+
+      .filtrosCard{
+        display: flex;
+      }
+
+     
+
+  

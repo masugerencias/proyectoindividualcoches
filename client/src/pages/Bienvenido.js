@@ -44,7 +44,6 @@ const Bienvenido = () => {
         <p>{infousuario ? infousuario[0].apellido : "No tiene apellido"}</p>
         <p>{infousuario ? infousuario[0].email : "No tiene email"}</p>
         <p>{infousuario ? infousuario[0].telefono : "No tiene telefono"}</p>
-        <p>{infousuario ? "Administrador" :""}</p>
         <button  class="btn btn-dark"  onClick={() => desconectar()}>Desconectar</button>
 
     </div>

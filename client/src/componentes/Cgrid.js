@@ -1,6 +1,9 @@
 import React from "react";
+import "../App.css"
+import {Card,Form,Button} from 'react-bootstrap'
 
 import { useState, useEffect } from 'react';
+
 
 
 
@@ -30,23 +33,26 @@ const imagen1 = <img src={url1}/>
 De todos modos los divs no se me generan en funcion de los resultaods de mongo...osea que tambien tengo que arreglar eso*/
  
 return(
-<div>
+<div className="gridCards">
 
-{todoscoches ? todoscoches.map((msj,i) => <div>
-    
-  <div class="row">   
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">{msj.marca}</h5>
-          <div class="card-text text-black-50">{msj.modelo}</div>
-        </div>
-      </div>
-    </div>
-
-    </div>  
+{todoscoches ? todoscoches.map((msj,i) => <div class="card border-0 shadow">
+<Card  style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://th.bing.com/th/id/R.92adbbe1a0c7c9ec41b36642cd0c6880?rik=YerYXIrk%2b7Z%2blQ&pid=ImgRaw&r=0" />
+      <Card.Body>
+      
+        <Card.Title>{msj.marca}</Card.Title>
+        <Card.Text>
+         {msj.modelo}
+        </Card.Text>
+        <Card.Text>
+         Pais de fabricación: {msj.pais} Año: {msj.ano} Asientos: {msj.plazas} Descapotable: {msj.descapotable}
+        </Card.Text>
+        
+        <Button variant="primary" >Seleccionar</Button>
+        
+      </Card.Body>
+     
+    </Card>
 
     </div>) : ""}  
  

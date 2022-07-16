@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {Button,Form} from 'react-bootstrap'
+import {Button,Form,Card} from 'react-bootstrap'
 
 const Cplazas = () =>{
 
@@ -25,11 +25,19 @@ const Cplazas = () =>{
     }
    
 return(
- 
-    <div className="soloRegistro">
-    <Form>
+  <div class="card border-0 shadow">
+
+  <div className="filtrosCards">
+  <Form>
+    <Card style={{ width: '18rem' }}>
+   
+   <Card.Img variant="top" src="https://www.vaultcars.com/wp-content/uploads/62CaddyConvertible-012-1024x682.jpg" />
+   <Card.Body>
+   <Card.Title>ASIENTOS</Card.Title>
+   <Card.Text>
+       Filtra por número de asientos
+     </Card.Text>
     <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label></Form.Label>
                 <Form.Control as="select" onChange={(e) => setPlazas(e.target.value)}>
                 <option>Número de asientos</option>
               <option value="2">2 asientos</option>
@@ -40,6 +48,9 @@ return(
     
      
               <Button variant="primary" onClick={() => realizarBusquedaPlazas()}>asientos </Button>  
+              </Card.Body>
+    </Card>
+    
       </Form>
     
 
@@ -60,7 +71,7 @@ return(
     </div>
     
       </div>
-
+      </div>
 )
 }
 

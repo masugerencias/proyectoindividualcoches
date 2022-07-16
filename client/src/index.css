@@ -13,3 +13,11 @@ code {
     monospace;
 }
 
+
+.cuadriculaGrid{
+  display: flex;
+}
+
+.mapeo{
+  display: flex;
+}

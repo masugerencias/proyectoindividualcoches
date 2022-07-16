@@ -35,7 +35,7 @@ const Busqueda = () =>{
     
     return(
 
-<div className='granRegistro'>
+<div className='filtroCards'>
 
 
 {/* A PARTIR DE AQUI LAS BUSQUEDAS IRÁN POR COMPONENTES */}

@@ -13,7 +13,7 @@ CREATE TABLE nuevos_usuarios (
     telefono VARCHAR(15),
     email VARCHAR(100) unique NOT NULL,
     contrasena VARCHAR(100) NOT NULL,
-    confirmarcontrasena VARCHAR(100)NOT NULL,
+    confirmarcontrasena VARCHAR(100),
     PRIMARY KEY(id)
 );
 select * from nuevos_usuarios;

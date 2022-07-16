@@ -1,4 +1,4 @@
-const { MongoClient, mongo, mydb, coleccion, url } = require("../database/mongo.js")
+                                                                                                                                                                                                                                                                                                                                                                                                                                                             const { MongoClient, mongo, mydb, coleccion, url } = require("../database/mongo.js")
 const connection = require("../database/sql.js")
 const { append, send } = require("express/lib/response");
 const mysql = require("mysql");
