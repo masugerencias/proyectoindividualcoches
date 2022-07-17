@@ -51,7 +51,7 @@ return(
          Pais de fabricación: {msj.pais} Año: {msj.ano} Asientos: {msj.plazas} Descapotable: {msj.descapotable}
         </Card.Text>
         
-        <Button  variant="primary" >Seleccionar</Button>
+        <Button  variant="primary"  >Seleccionar</Button>
         
       </Card.Body>
      

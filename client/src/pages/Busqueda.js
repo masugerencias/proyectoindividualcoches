@@ -12,27 +12,7 @@ import Cplazas from "../componentes/Cplazas";
 
 const Busqueda = () =>{
   
- 
-     const [pais, setPais] = useState("");
-
-    const realizarBusquedaPais = () => {
-           
-          const requestOptions = {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify( 
-              {pais: pais})
-          
-        };
-
-        fetch("busquedavehiculos", requestOptions)
-          .then((response) => response.json())
-          .then((response) =>{setPais(response);
-                              console.log(response);
-                            })
-      
-    }
-    
+     
     return(
 
 <div className='filtroCards'>
@@ -40,33 +20,14 @@ const Busqueda = () =>{
 
 {/* A PARTIR DE AQUI LAS BUSQUEDAS IRÁN POR COMPONENTES */}
 
-
-
-
         {Cpais()}
         {Cplazas()}
         {Cdescapotable()}
         {Cpuertas()}
        
-        
-
-
-  
- 
-
-
- 
-
-
- 
-  
+       
 
 </div>
-
-
-
-
-
 
 
 /* 
@@ -79,8 +40,6 @@ const Busqueda = () =>{
     <div id="emailHelp" className="form-text"></div>
   </div>
   
-  
-
  {pais ? pais.map((msj,i) => <div>
       {msj.marca},{msj.modelo}
       </div>) : "el boton me va fatal, ntnces cuando pongo el map, no funciona nada"}  
@@ -95,18 +54,7 @@ const Busqueda = () =>{
 <p>{pais ? pais[4].modelo : ""}</p> */
 
 
-
-
-
-
-
-
-
     ) 
-
-
-
-
 
     
 }

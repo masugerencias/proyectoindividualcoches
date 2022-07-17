@@ -12,8 +12,8 @@ const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [contrasena, setContrasena] = useState("");
     const [login, setLogin] =  useState("");
-   
-    useEffect(() => {
+   /* ESTO EN TEORIA TIENE QUE EJECUTARSE DESPUES DE QUE SE HAYA RENDERIZADO EL COMPOENTNE, pues poniendo esto en el fetch me funciona . */
+   /*  useEffect(() => {
         if (login){
         
         navigate('/bienvenido'); 
@@ -22,7 +22,7 @@ const navigate = useNavigate()
 
         }
         
-    },[login])
+    },[login]) */
 
     const entrar = () => {
            
@@ -38,7 +38,18 @@ const navigate = useNavigate()
 
         fetch("login", requestOptions)
           .then((response) => response.json())
-          .then((response) =>setLogin(response))         
+          .then((response) => {setLogin(response);
+            if (login){
+        
+              navigate('/bienvenido'); 
+      
+              sessionStorage.setItem("userLogin", email);
+      
+              }
+          })   
+
+
+
         } 
 
 return (
@@ -57,7 +68,6 @@ return (
  
   <button class="btn btn-dark" onClick={entrar()} >ENTRAR</button>
 
-  {login ? "" : <p>uusario incorrecto</p>} 
 
 
 

@@ -29,6 +29,8 @@ const Main = () => {
         <Route path="/bienvenido" element={<Bienvenido/>} />
         <Route path="/busqueda" element={<Busqueda/>} />
 
+
+
         </Routes>
     </div>
     );

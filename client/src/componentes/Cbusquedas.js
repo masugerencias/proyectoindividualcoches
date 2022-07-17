@@ -13,9 +13,9 @@ const Cbusquedas = () => {
 
   return (
 
-      <div class="col-12">
+      <div className="col-12">
         <br></br>
-        <button class="btn btn-primary" type="button"><Link style ={{textDecoration:'none', color:'white'}} to={"/busqueda"}>BUSQUEDA AVANZADA</Link></button>
+        <button className="btn btn-primary" type="button"><Link style ={{textDecoration:'none', color:'white'}} to={"/busqueda"}>BUSQUEDA AVANZADA</Link></button>
 
 {/* ESTE BOTON manda a ejecutar la funcion que va al back dentro de este componente. */}
       </div>

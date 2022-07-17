@@ -10,7 +10,7 @@ router.post("/registro",user.registronuevo);
 router.post("/login",user.loginusuario);
 router.post("/bienvenido",user.infousuario);
 router.post("/todoslosvehiculos",vehiculos.todoslosvehiculos);
-router.post("/busquedavehiculos",vehiculos.busquedavehiculos);
+router.get("/busquedavehiculos",vehiculos.busquedavehiculos);
 router.post("/descapotables",vehiculos.descapotables);
 router.post("/busquedapuertas",vehiculos.busquedapuertas);
 router.post("/busquedaplazas",vehiculos.busquedaplazas);
