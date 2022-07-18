@@ -12,9 +12,9 @@ const Inicio = () => {
            
               <div className="iniciocss">          
             <Ccarrousel/> 
-            OFERTAS POR CATEEGORIA
             <br></br>
-            <br></br>
+_________________________________________________________________            <br></br>
+            <br></br> <br></br>
             <Cofertas/>
 
             <br></br>

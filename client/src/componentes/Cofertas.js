@@ -11,27 +11,27 @@ return(
  
   
   
-      <CardGroup>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+      <CardGroup >
+        <Card className="ofertasymapas">
+        <Card.Img variant="top" src="..\fotoCoches\\fiat1500spider.jpg"/>
           <Card.Body>
-            <Card.Title>Card title</Card.Title>
+
+            <Card.Title>FIAT "1500 Spider"</Card.Title>
             <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in
-              to additional content. This content is a little bit longer.
+             Coche clasico para dos personas, ideal para recorrer la costa azul.
             </Card.Text>
 
           </Card.Body>
           <Button  variant="info" ><Link style ={{textDecoration:'none', color:'black'}} to={"/masinfo"}>Reservar </Link></Button>
 
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Consultar condiciones</small>
           </Card.Footer>
         </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+        <Card className="ofertasymapas">
+        <Card.Img variant="top" src="..\fotoCoches\\astonmartindb6.jpg"/>
           <Card.Body>
-            <Card.Title>Card title</Card.Title>
+            <Card.Title>ASTON MARTIN "db6 Volante"</Card.Title>
             <Card.Text>
               This card has supporting text below as a natural lead-in to
               additional content.{' '}
@@ -41,13 +41,13 @@ return(
           <Button  variant="info" ><Link style ={{textDecoration:'none', color:'black'}} to={"/masinfo"}>Reservar </Link></Button>
 
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Consultar condiciones</small>
           </Card.Footer>
         </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+        <Card className="ofertasymapas">
+        <Card.Img variant="top" src="..\fotoCoches\\giuliettaspider.jpg"/>
           <Card.Body>
-            <Card.Title>Card title</Card.Title>
+            <Card.Title>ALFA ROMEO "Giulia Spider"</Card.Title>
             <Card.Text>
               This is a wider card with supporting text below as a natural lead-in
               to additional content. This card has even longer content than the
@@ -59,7 +59,7 @@ return(
 
 
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Consultar condiciones</small>
           </Card.Footer>
         </Card>
       </CardGroup>

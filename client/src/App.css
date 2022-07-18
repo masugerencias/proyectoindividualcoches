@@ -230,4 +230,11 @@ display: flex;
 .card{
   padding-top: 15px;
   padding-bottom: 15px;
+
+}
+
+.ofertasymapas{
+  display: flex;
+  align-items: center;
+  
 }

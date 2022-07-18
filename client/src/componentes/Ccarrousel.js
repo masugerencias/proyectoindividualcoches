@@ -16,27 +16,24 @@ return(
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="https://ahoragranada-185c4.kxcdn.com/wp-content/uploads/2018/10/exposicion-de-coches-clasicos-en-el-paseo-del-salon-AlexCamara-16.jpg
-" className="d-block w-100" alt="..."/>
+      <img src="..\fotoCoches\\madrid.jpg" className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>MADRID</h5>
+        <p>Concentración de coches clásicos en La Puerta Del Sol.</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="https://ahoragranada-185c4.kxcdn.com/wp-content/uploads/2018/10/exposicion-de-coches-clasicos-en-el-paseo-del-salon-AlexCamara-16.jpg
-" className="d-block w-100" alt="..."/>
+      <img src="..\fotoCoches\\bcn.jpg" className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>BARCELONA</h5>
+        <p>Concentración de coches clásicos en Barcelona.</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="https://ahoragranada-185c4.kxcdn.com/wp-content/uploads/2018/10/exposicion-de-coches-clasicos-en-el-paseo-del-salon-AlexCamara-16.jpg
-" className="d-block w-100" alt="..."/>
+      <img src="..\fotoCoches\\granada.jpg" className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>GRANADA</h5>
+        <p>Concentración de coches clásicos en Granada.</p>
       </div>
     </div>
   </div>

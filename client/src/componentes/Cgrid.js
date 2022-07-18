@@ -44,7 +44,7 @@ return(
          {msj.modelo}
         </Card.Text>
         <Card.Text>
-         Pais de fabricación: {msj.pais}.<br></br> Año: {msj.ano}
+         Pais de fabricación: {msj.pais}<br></br> Año: {msj.ano}
         </Card.Text>
         
         <Button  variant="primary"  >Seleccionar</Button>
@@ -52,7 +52,7 @@ return(
       </Card.Body>
      
     </Card>
-    </div>) : ""}  
+    </div>) :""}  
  
     </div>
 

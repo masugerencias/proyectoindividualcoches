@@ -70,9 +70,14 @@ const Cplazas = () => {
               <div className='tarjetaMap'>
 
                 <Card style={{ width: '18rem' }} key={i}>
+                <Card.Img variant="top" src={pai.foto} />
+
                   <Card.Body>
-                    <Card.Title>{pai.modelo}</Card.Title>
-                    <Card.Text>{pai.marca}</Card.Text>
+                    <Card.Title>{pai.marca}</Card.Title>
+                    <Card.Text>{pai.modelo}</Card.Text>
+                    <Card.Text>
+         Pais de fabricación: {pai.pais}.<br></br> Año: {pai.ano}
+        </Card.Text>
                     <Button variant="info" ><Link style={{ textDecoration: 'none', color: 'black' }} to={"/masinfo"}>Reservar </Link></Button>
 
                   </Card.Body>
