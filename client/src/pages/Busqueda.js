@@ -18,12 +18,12 @@ const Busqueda = () =>{
 <div className='filtroCards'>
 
 
-{/* A PARTIR DE AQUI LAS BUSQUEDAS IRÁN POR COMPONENTES */}
-
-        {Cpais()}
-        {Cplazas()}
-        {Cdescapotable()}
-        {Cpuertas()}
+{/* LAS BUSQUEDAS aqui VAN POR COMPONENTES */}
+<Cpais/>
+<Cplazas/>
+<Cdescapotable/>
+<Cpuertas/>
+        
        
        
 

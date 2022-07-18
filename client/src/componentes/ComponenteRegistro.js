@@ -83,7 +83,7 @@ const ComponenteRegistro = () => {
     <label for="exampleInputPassword1" classname="form-label">Contraseña</label>
     <input type="password" className="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
   </div>
-  <button class="btn btn-dark" onClick={() => enviarRegistro()}>CREAR CUENTA</button>
+  <button className="btn btn-dark" onClick={() => enviarRegistro()}>CREAR CUENTA</button>
   
    
   {/* aqui tiene que cargarse la pagina de nuevo solo con login

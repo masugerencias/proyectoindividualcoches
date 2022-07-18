@@ -167,7 +167,7 @@ flex-direction: column;
 
 
 /* ver todos los coches ACABA */
-.filtros{
+/* .filtros{
   display: flex;
   flex-direction: column;
   }
@@ -197,10 +197,37 @@ display: flex;
         
       }
 
-      .filtrosCard{
-        display: flex;
-      }
-
      
 
-  
+     .resultadosFiltros{
+      display: flex;
+     } */
+
+     .card-img-top{
+      max-width: 286px;
+      min-width: 286px;
+      max-height: 180px;
+      min-height: 180px;
+     }
+   
+.tarjetaMap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.gridCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+} 
+
+.card{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

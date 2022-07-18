@@ -7,17 +7,17 @@ return(
     <form>
         <div className="form-group-todo">
         Ayudamos a mejorar
-    <div class="form-group">
+    <div className="form-group">
       <label for="exampleFormControlInput1">Email</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" />
+      <input type="email" className="form-control" id="exampleFormControlInput1" />
     </div>
    
    
-    <div class="form-group">
+    <div className="form-group">
       <label for="exampleFormControlTextarea1">Pon tu comentario</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <button class="btn btn-dark" >ENVIAR</button>
+    <button className="btn btn-dark" >ENVIAR</button>
 
     </div>
   </form>

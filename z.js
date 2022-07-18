@@ -85,7 +85,7 @@ return(
 
 
 
-{/* <select class="form-select" aria-label="Default select example">
+{/* <select className="form-select" aria-label="Default select example">
   <option selected>Fitlro por país</option>
   <option value="alemania">Alemania</option>
   <option value="espana">España</option>
@@ -95,7 +95,7 @@ return(
   
 </select>,
 
-<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" className="btn btn-dark">Dark</button>
  */}
 
 
@@ -127,17 +127,17 @@ https://image.jimcdn.com/app/cms/image/transf/dimension=1920x10000:format=jpg/pa
 
 {/* <div id='login'>
     LOGIN:
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Correo</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"onChange={(e) => setEmail(e.target.value)}/>
-    <div id="emailHelp" class="form-text"></div>
+  <div className="mb-3">
+    <label for="exampleInputEmail1" className="form-label">Correo</label>
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"onChange={(e) => setEmail(e.target.value)}/>
+    <div id="emailHelp" className="form-text"></div>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
+  <div className="mb-3">
+    <label for="exampleInputPassword1" className="form-label">Contraseña</label>
+    <input type="password" className="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
   </div>
  
-  <button class="btn btn-dark" onClick={() => entrar()}>ENTRAR</button>
+  <button className="btn btn-dark" onClick={() => entrar()}>ENTRAR</button>
 
 
   </div>

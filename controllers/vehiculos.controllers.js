@@ -22,6 +22,7 @@ const vehiculos = {
        "puertas" :req.body.puertas,
         "plazas" : req.body.plazas}
          */
+        let query = "fiat"
     
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
@@ -39,23 +40,14 @@ const vehiculos = {
     },
 
 
-    busquedavehiculos: (req, res) => {
+    busquedapais: (req, res) => {
       
-     /*  let query = {
-        "marca" :  req.body.marca,   
-         "pais" : req.body.pais,
-        "modelo" : req.body.modelo,
-        "descapotable" : req.body.descapotable,
-       "puertas" :req.body.puertas,
-        "plazas" : req.body.plazas } */
 
-
-    
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
             var dbo = db.db(mydb);
             dbo.collection(coleccion).find({"pais":req.body.pais}).toArray(function (err, result) {
-                if (err) throw err;  
+                if (err) throw err; 
                 res.json(result)
                 
              });
@@ -116,6 +108,33 @@ busquedaplazas: (req, res) => {
     
     
 },
+
+
+
+
+matriculas:(req, res) => {
+    let query ={"matricula" : "1111AAA"}
+
+    MongoClient.connect(url, function (err, db) {
+        if (err) throw err;
+        var dbo = db.db(mydb);
+        dbo.collection(coleccion).findOne({"matricula":req.body.matricula}, function(err, result) {
+
+            if (err) throw err;  
+            res.json(result)
+            
+         });
+         
+    });
+    //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
+    
+    
+},
+
+
+/* BUSQUEDA DE VEHICULOS PARAM! */
+
+
 
 
 

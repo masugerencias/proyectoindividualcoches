@@ -1,77 +1,72 @@
 import React from "react";
+import {Card,Button} from "react-bootstrap"
+import CardGroup from 'react-bootstrap/CardGroup';
+import { Link } from "react-router-dom";
 
 
 const Cofertas = () => {
    
 
 return(
-   
-<div class="ofertascss">
-  <div class="row">
-{/*     OFERTA 1*/}    
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Descapotables</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div>
-   
-{/*     OFERTA 2*/}    
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div>
+ 
+  
+  
+      <CardGroup>
+        <Card>
+          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in
+              to additional content. This content is a little bit longer.
+            </Card.Text>
+
+          </Card.Body>
+          <Button  variant="info" ><Link style ={{textDecoration:'none', color:'black'}} to={"/masinfo"}>Reservar </Link></Button>
+
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This card has supporting text below as a natural lead-in to
+              additional content.{' '}
+            </Card.Text>
+
+          </Card.Body>
+          <Button  variant="info" ><Link style ={{textDecoration:'none', color:'black'}} to={"/masinfo"}>Reservar </Link></Button>
+
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text>
+              This is a wider card with supporting text below as a natural lead-in
+              to additional content. This card has even longer content than the
+              first to show that equal height action.
+            </Card.Text>
+
+          </Card.Body>
+          <Button  variant="info" ><Link style ={{textDecoration:'none', color:'black'}} to={"/masinfo"}>Reservar </Link></Button>
 
 
-  {/*  
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div>
-
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div> */}
-    {/*     OFERTA 2*/}    
-<div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
-" class="card-img-top" alt="..."/>
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Team Member</h5>
-          <div class="card-text text-black-50">Web Developer</div>
-        </div>
-      </div>
-    </div>
-
-
-
-   
-    </div>
-    </div>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
+  
+  
+ 
+  
 
 )
 }

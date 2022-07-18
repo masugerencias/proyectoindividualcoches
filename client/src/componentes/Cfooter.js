@@ -7,10 +7,10 @@ const Cfooter = () => {
 
 return(
    
-    <footer class="page-footer font-small bg-light">
+    <footer className="page-footer font-small bg-light">
     
      
-      <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <div className="footer-copyright text-center py-3">© 2022 Copyright:
         <a href="/"> rentacar.com</a>
       </div>
      

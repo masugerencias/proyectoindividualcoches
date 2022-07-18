@@ -12,7 +12,7 @@ const Cgrid=()=>{
   const [todoscoches, setTodoscoches] = useState("");
 
 
- // Está a la espera de cualquier cambio que haya en edad.
+ // Está a la espera de cualquier cambio que haya en todocoches.
  useEffect(() => {
   const requestOptions = {
     method: "POST",
@@ -28,19 +28,15 @@ const Cgrid=()=>{
       
   
 
-/* NO ME FUNCIONA ESTA HISTORIA DE LA FOTO
-let url1 = todoscoches[0].foto;
-const imagen1 = <img src={url1}/> 
 
+/* De todos modos los divs no se me generan en funcion de los resultaods de mongo...osea que tambien tengo que arreglar eso*/
 
-De todos modos los divs no se me generan en funcion de los resultaods de mongo...osea que tambien tengo que arreglar eso*/
- 
 return(
 <div className="gridCards">
 
-{todoscoches ? todoscoches.map((msj,i) => <div class="card border-0 shadow" key={i}>
+{todoscoches ? todoscoches.map((msj,i) => <div className="card border-0 shadow" key={i}>
 <Card  style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://th.bing.com/th/id/R.92adbbe1a0c7c9ec41b36642cd0c6880?rik=YerYXIrk%2b7Z%2blQ&pid=ImgRaw&r=0" />
+      <Card.Img variant="top" src={msj.foto} />
       <Card.Body>
       
         <Card.Title>{msj.marca}</Card.Title>
@@ -48,7 +44,7 @@ return(
          {msj.modelo}
         </Card.Text>
         <Card.Text>
-         Pais de fabricación: {msj.pais} Año: {msj.ano} Asientos: {msj.plazas} Descapotable: {msj.descapotable}
+         Pais de fabricación: {msj.pais}.<br></br> Año: {msj.ano}
         </Card.Text>
         
         <Button  variant="primary"  >Seleccionar</Button>

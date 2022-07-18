@@ -11,18 +11,18 @@ const Inicio = () => {
         return(
            
               <div className="iniciocss">          
-            {Ccarrousel()} 
+            <Ccarrousel/> 
             OFERTAS POR CATEEGORIA
             <br></br>
             <br></br>
-            {Cofertas()}
+            <Cofertas/>
 
             <br></br>
 
             <br></br>
             
-            <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button"><Link style ={{textDecoration:'none', color:'white'}} to={"/vercoches"}>VER TODOS</Link></button>
+            <div className="d-grid gap-2 col-6 mx-auto">
+  <button className="btn btn-primary" type="button"><Link style ={{textDecoration:'none', color:'white'}} to={"/vercoches"}>VER TODOS</Link></button>
 </div>
 <br></br>
 <br></br>
