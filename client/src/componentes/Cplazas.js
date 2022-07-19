@@ -31,7 +31,7 @@ const Cplazas = () => {
   return (
     <div className='tarjetaMap'>
 
-      <div className="card border-0 shadow">
+<div className="shadow-lg p-3 mb-5 bg-white rounded">
 
         <div className="filtrosCards">
           <Form>
@@ -78,7 +78,7 @@ const Cplazas = () => {
                     <Card.Text>
          Pais de fabricación: {pai.pais}.<br></br> Año: {pai.ano}
         </Card.Text>
-                    <Button variant="info" ><Link style={{ textDecoration: 'none', color: 'black' }} to={"/masinfo"}>Reservar </Link></Button>
+                    <Button variant="info"><Link style ={{textDecoration:'none', color:'white'}} to={`/masinfo/${pai.matricula}`}>Más información</Link></Button>
 
                   </Card.Body>
                 </Card>

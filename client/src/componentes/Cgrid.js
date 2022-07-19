@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css"
 import {Card,Form,Button} from 'react-bootstrap'
-
+import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 
@@ -34,7 +34,7 @@ const Cgrid=()=>{
 return(
 <div className="gridCards">
 
-{todoscoches ? todoscoches.map((msj,i) => <div className="card border-0 shadow" key={i}>
+{todoscoches ? todoscoches.map((msj,i) => <div class="shadow-lg p-3 mb-5 bg-white rounded" key={i}>
 <Card  style={{ width: '18rem' }}>
       <Card.Img variant="top" src={msj.foto} />
       <Card.Body>
@@ -47,7 +47,7 @@ return(
          Pais de fabricación: {msj.pais}<br></br> Año: {msj.ano}
         </Card.Text>
         
-        <Button  variant="primary"  >Seleccionar</Button>
+        <Button variant="info"><Link style ={{textDecoration:'none', color:'white'}} to={`/masinfo/${msj.matricula}`}>Más información</Link></Button>
         
       </Card.Body>
      

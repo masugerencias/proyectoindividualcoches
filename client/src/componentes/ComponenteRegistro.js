@@ -57,6 +57,7 @@ const ComponenteRegistro = () => {
             
     } 
     return (
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
 <div className='granRegistro'>
   CREAR CUENTA
 <div classname="mb-3">
@@ -90,7 +91,7 @@ const ComponenteRegistro = () => {
  */}
 
 
-  
+</div>
   
   
 

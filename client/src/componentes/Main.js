@@ -13,6 +13,9 @@ import Bienvenido from "../pages/Bienvenido";
 import Busqueda from "../pages/Busqueda";
 import Masinfo from "../pages/Masinfo";
 import Obtenidos from "../pages/Obtenidos";
+import Pago from "../pages/Pago";
+import Despuespago from "../pages/Despuespago";
+
 
 
 const Main = () => {
@@ -32,6 +35,10 @@ const Main = () => {
         <Route path="/busqueda" element={<Busqueda/>} />
         <Route path="/masinfo/:id" element={<Masinfo/>} />
         <Route path="/obtenidos" element={<Obtenidos/>} />
+        <Route path="/pago/:id" element={<Pago/>} />
+        <Route path="/despuespago/:id" element={<Despuespago/>} />
+
+
 
 
 

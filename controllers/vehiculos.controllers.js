@@ -114,8 +114,8 @@ busquedaplazas: (req, res) => {
 
 matriculas:(req, res) => {
     let query ={"matricula" : "1111AAA"}
-
-    MongoClient.connect(url, function (err, db) {
+console.log(req.body)
+     MongoClient.connect(url, function (err, db) {
         if (err) throw err;
         var dbo = db.db(mydb);
         dbo.collection(coleccion).findOne({"matricula":req.body.matricula}, function(err, result) {
@@ -125,7 +125,7 @@ matriculas:(req, res) => {
             
          });
          
-    });
+    }); 
     //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
     
     

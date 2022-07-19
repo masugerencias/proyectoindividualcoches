@@ -7,7 +7,7 @@ import { Link,useNavigate } from 'react-router-dom';
 const Clogin = () => {
 /* ESTAS DOS CONSTANTES NO RECUERDO PARA QUE ERAN, entiendo que es para coger los valores de los inputs con usestate 
 Es decir, lo que está más abajo en HTML*/
-const navigate = useNavigate()
+      const navigate = useNavigate()
 
     const [email, setEmail] = useState("");
     const [contrasena, setContrasena] = useState("");
@@ -54,7 +54,8 @@ const navigate = useNavigate()
 
 return (
 
-<div id='login'>
+
+<div id='login' class="shadow-lg p-3 mb-5 bg-white rounded">
     LOGIN:
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label">Correo</label>

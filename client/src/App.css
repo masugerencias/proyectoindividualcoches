@@ -238,3 +238,73 @@ display: flex;
   align-items: center;
   
 }
+
+.fotoinfo{
+  max-width: 600px;
+  min-width: 600px;
+  max-height: 400px;
+  min-height: 400px;
+}
+
+
+
+.tarjetainfogrande{
+  display: flex;
+  justify-content: center
+
+
+}
+
+#tarjetainfo{
+max-width: 700px;
+display: flex;
+}
+
+
+/* ESTILOS DE TARJETA PAGO */
+.returnenteropago {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.pagocontenedorgrande {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.pagocontenedor {
+  display: flex;
+  max-width: 600px;
+  min-width: 600px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+/* INICIO */
+.textoinicio{
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+
+/* DESPUES DE PAGO */
+
+.contenedorbotones {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorboton1{
+  display:flex
+}
+
+.contenedorboton2{
+  display:flex
+}
