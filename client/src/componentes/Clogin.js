@@ -3,10 +3,12 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 
-
+/**
+ * 
+ * @returns {boolean} true o false. Si es true, el ususario se ha logueado con éxito, de lo contrario es false.
+ */
 const Clogin = () => {
-/* ESTAS DOS CONSTANTES NO RECUERDO PARA QUE ERAN, entiendo que es para coger los valores de los inputs con usestate 
-Es decir, lo que está más abajo en HTML*/
+
       const navigate = useNavigate()
 
     const [email, setEmail] = useState("");

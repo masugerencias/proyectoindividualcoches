@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: client/src/App.js</title>
+    <title>JSDoc: Source: client/src/componentes/Cnavbar.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: client/src/App.js</h1>
+    <h1 class="page-title">Source: client/src/componentes/Cnavbar.js</h1>
 
     
 
@@ -26,37 +26,46 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import './App.css';
-import Cnavbar from './componentes/Cnavbar';
-import Cfooter from './componentes/Cfooter';
-import MainComponent from './componentes/Main';
-import { BrowserRouter } from "react-router-dom";
-import Ccarrousel from './componentes/Ccarrousel';
+            <pre class="prettyprint source linenums"><code>import React from 'react'; 
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Card, Button, Form, Navbar, Container, Nav, NavLink, NavDropdown } from 'react-bootstrap'
+
+
 /**
  * 
- * @returns El renderizado principal de los componentes que queramos que estén en todas las páginas.
+ * @returns Navbar
  */
-function App() {
-  return (
-    
-    &lt;BrowserRouter>
-    &lt;div className="App">
-        
-        &lt;Cnavbar/>     
-        &lt;MainComponent />
-        &lt;Cfooter/>
-        
-    &lt;/div>
-&lt;/BrowserRouter>
+const Cnavbar = () => {
+return (
 
-  );
+
+  &lt;Navbar bg="primary" variant="dark">
+        &lt;Container>
+          &lt;Navbar.Brand href="/">Rentacar&lt;/Navbar.Brand>
+          &lt;Nav className="me-auto">
+            &lt;Nav.Link href="/">Inicio&lt;/Nav.Link>
+            &lt;Nav.Link href="/vercoches">Vehículos&lt;/Nav.Link>
+
+            {sessionStorage.getItem('userLogin') ? &lt;li>{ &lt;Nav.Link href="/bienvenido">Perfil&lt;/Nav.Link>}&lt;/li> : &lt;li>{&lt;Nav.Link href="/perfil">Identifícate&lt;/Nav.Link>}&lt;/li>}
+            
+             {/* Si esta lopgueado que se cambie por bienvenido! */}
+            &lt;Nav.Link href="/dondebarcelona">Dónde estamos&lt;/Nav.Link>
+            &lt;Nav.Link href="/contacto">Contacto&lt;/Nav.Link>
+            
+          &lt;/Nav>
+        &lt;/Container>
+      &lt;/Navbar>
+
+
+
+
+
+)
+
 }
-export default App;
 
-
-
-
-</code></pre>
+export default Cnavbar;</code></pre>
         </article>
     </section>
 
