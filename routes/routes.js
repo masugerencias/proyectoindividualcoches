@@ -4,6 +4,9 @@ const user = require("../controllers/user.controllers.js");
 const vehiculos = require("../controllers/vehiculos.controllers.js");
 const passRecovery = require ("../controllers/recuperacion.controllers")
 
+/**Aqui están todas las rutas de la página web
+ * @param {String}
+ */
 
 //aqui van las rutas de a la aplicacion.
 router.get("/",user.home); 

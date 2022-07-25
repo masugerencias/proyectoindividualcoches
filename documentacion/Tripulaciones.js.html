@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Tripulaciones.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Tripulaciones.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+
+ * @fileoverview Menú aprMenu, desplegable con efecto expansión suavizado
+
+ *
+
+ * @version                               2.2
+
+ *
+
+ * @author                 César Krall &lt;cesarkrall@aprenderaprogramar.com>
+
+ * @copyright           aprenderaprogramar.com
+
+ *
+
+ * History
+
+ * v2.2 – Se mejoró el efecto de expansión de los submenús dándole efecto aceleración
+
+ * v2.0 – Se evitó que quedaran supersupuestos textos de submenús
+
+ * v1.1 – Se mejoró la compatibilidad con navegadores Opera
+
+ * ----
+
+ * La primera versión de aprMenu fue escrita por Karl Monitrix
+
+        */
+
+
+
+/* 
+const Cpuertas = () => {
+
+  const [puertas,setPuertas] = useState("");
+
+  const realizarBusquedaPuertas = () => {
+
+      const requestOptions = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify( 
+              {puertas: puertas})
+          
+        };
+
+        fetch("busquedapuertas", requestOptions)
+          .then((response) => response.json())
+          .then((response) =>{setPuertas(response);
+                              console.log(response);
+                            })
+
+
+          }
+
+return(
+
+
+  &lt;div className="soloRegistro">
+  &lt;Form>
+  &lt;Form.Group controlId="exampleForm.ControlSelect1">
+              &lt;Form.Label>&lt;/Form.Label>
+              &lt;Form.Control as="select" onChange={(e) => setPuertas(e.target.value)}>
+              &lt;option>Puertas&lt;/option>
+            &lt;option value="3">3&lt;/option>
+            &lt;option value="5">5&lt;/option>
+              &lt;/Form.Control>
+            &lt;/Form.Group>
+  
+   
+            &lt;Button variant="primary" onClick={() => realizarBusquedaPuertas()}>Filtrar por puertas &lt;/Button>  
+    &lt;/Form>
+  
+    &lt;div> 
+  &lt;/div>
+  
+    &lt;/div>
+
+)
+
+} */
+
+
+
+
+
+
+
+
+
+
+/* {pais ? pais.map((msj,i) => &lt;div>
+  {msj.marca},{msj.modelo}
+  &lt;/div>) : "el boton me va fatal, ntnces cuando pongo el map, no funciona nada"}  
+
+ */
+
+
+ {/*  &lt;p>{pais ? pais[0].marca : ""}&lt;/p> 
+  &lt;p>{pais ? pais[0].modelo : ""}&lt;/p> 
+  &lt;p>{pais ? pais[0].descapotable : ""}&lt;/p> 
+  &lt;p>{pais ? pais[0].puertas : ""}&lt;/p> 
+  &lt;p>{pais ? pais[0].ano : ""}&lt;/p>  */}
+
+
+{/* {pais ? pais.map((pai, i) => {
+          return (
+            &lt;Card style={{ width: '18rem' }} key={i}>
+                &lt;Card.Body>
+                &lt;Card.Title>{pai.marca}&lt;/Card.Title>
+                &lt;Card.Text>{pai.modelo}&lt;/Card.Text>
+                &lt;/Card.Body>
+            &lt;/Card>
+          )
+        }) : ""} */}
+
+
+
+{/* &lt;select className="form-select" aria-label="Default select example">
+  &lt;option selected>Fitlro por país&lt;/option>
+  &lt;option value="alemania">Alemania&lt;/option>
+  &lt;option value="espana">España&lt;/option>
+  &lt;option value="italia">Italia&lt;/option>
+  &lt;option value="francia">Francia&lt;/option>
+  &lt;option value="inglaterra">Inglaterra&lt;/option>
+  
+&lt;/select>,
+
+&lt;button type="button" className="btn btn-dark">Dark&lt;/button>
+ */}
+
+
+
+
+
+/* buscarcoche:(req,res) => {
+
+
+https://rqmotors.com/wp-content/uploads/2017/01/007-126.jpg
+https://th.bing.com/th/id/OIP.kq274aDHyexBs2ZCzQxogAEsDh?pid=ImgDet&amp;rs=1
+
+
+FOTOS DE COCHES CLASICOS EN GRANADA
+https://ahoragranada-185c4.kxcdn.com/wp-content/uploads/2018/10/exposicion-de-coches-clasicos-en-el-paseo-del-salon-AlexCamara-16.jpg
+https://www.ideal.es/granada/granada-llena-coches-20181027233548-nt.html
+
+
+FOTOS DE COCHES EN BCN
+https://i.pinimg.com/originals/83/44/ca/8344ca513b7f63ac76a3464ecffd8670.jpg
+https://www.metropoliabierta.com/uploads/s1/78/41/52/coches-historicos-bcn.jpeg
+https://www.hcchotels.com/files/autoretro.jpg
+
+COCHES EN MADRIID
+https://www.bodas.net/bodas/proveedores/coches-de-boda/madrid/madrid
+https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e7/08/dd.jpg
+https://www.autofacil.es/wp-content/uploads/2021/05/clasico-1.jpg
+https://image.jimcdn.com/app/cms/image/transf/dimension=1920x10000:format=jpg/path/s02a15506aef99688/image/i4877687adbbb2410/version/1588404530/vintage-tour-taxi-1500-madrid.jpg
+
+{/* &lt;div id='login'>
+    LOGIN:
+  &lt;div className="mb-3">
+    &lt;label for="exampleInputEmail1" className="form-label">Correo&lt;/label>
+    &lt;input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"onChange={(e) => setEmail(e.target.value)}/>
+    &lt;div id="emailHelp" className="form-text">&lt;/div>
+  &lt;/div>
+  &lt;div className="mb-3">
+    &lt;label for="exampleInputPassword1" className="form-label">Contraseña&lt;/label>
+    &lt;input type="password" className="form-control" id="exampleInputPassword1"onChange={(e) => setContrasena(e.target.value)}/>
+  &lt;/div>
+ 
+  &lt;button className="btn btn-dark" onClick={() => entrar()}>ENTRAR&lt;/button>
+
+
+  &lt;/div>
+ */
+
+
+ 
+    //seleccionar coche
+    
+    /* El ususario tiene que hacer una busqueda de los coches con las caracteristicas del coche
+    y con las fechas para ver si está disponible: (Pantalla 2 de excalidraw)
+    Es decir: 
+            -lectura de MONGODB toArray de los coches con sus caracteristicas:
+     */
+         /*    MongoClient.connect(url, function (err, db) {
+                if (err) throw err;
+                var dbo = db.db(mydb);
+                dbo.collection(coleccion).find({ puertas: "3", descapotable: "no" }).toArray(function (err, result) {
+                    if (err) throw err;
+                    console.log(result);
+                    db.close();
+                });
+            }); */
+            //Asi se muestran los resultados de la busqueda y selecciona alguno de los mostrados.
+            
+   /*  res.send('fechasysitios')
+    
+    },
+    
+    fechasysitios:(req,res) => { */
+    
+    //le lleva a la pagina de escoger fechas y el sitio de recepcion y de devolución.
+    /* 
+    Es decir:
+       UPDATE del coche seleccionado de mongo con fechas y sitios:
+      */
+    
+           /*  MongoClient.connect(url, function (err, db) {
+                if (err) throw err;
+                var dbo = db.db(mydb);
+                var myquery = { _id: mongo.ObjectId("62b71097e3959773aaac24c9") };
+                var newvalues = { $set: { "alquiler.fecha_recepcion": "1/1/2023", "alquiler.fecha_devolucion": "10/1/2023", "alquiler.lugar_recepcion": "barajas", "alquiler.lugar_devolucion": "atocha", } };
+                dbo.collection(coleccion).updateOne(myquery, newvalues, function (err, res) {
+                    if (err) throw err;
+                    console.log("******************Se ha reservado el SEAT 600*********************");
+                    db.close();
+                });
+            }); */
+                    
+    
+    
+      /*   res.send('confirmar seleccion') */
+    
+   /*  }, */
+    
+    /* confirmarseleccion:(req,res) => { */
+       
+        /* 
+        Ahora el coche seleccionado ya tienes las fechas en su JSON, ahora como en la pantalla 3.5 de excalidraw
+        hay que mostrarle el JSON entero.
+        */
+    
+        //Al confirmar se selecciona ese vehiculo con las fechas y lugares seleccionados (que están ya en su JSON)
+      /*   MongoClient.connect(url, function (err, db) {
+            if (err) throw err;
+            var dbo = db.db(mydb);
+            dbo.collection(coleccion).find({ _id: mongo.ObjectId("62b71097e3959773aaac24c9") }).toArray(function (err, result) {
+                if (err) throw err;
+    
+                console.log(result);
+                db.close();
+            });
+        });
+     */
+     //aqui ya tenemos el SEAT 600 alquilado 10 dias recepcion en barajas y devolucion en atocha.   
+    
+    
+     /*    res.send('ir a la pagina de pagar')
+    
+    }
+     */
+
+
+/*     
+ */
+
+
+/* 
+ALBERTO
+
+const user = {
+  saveDataForm: (req, res) => {
+    let nombre = req.body.nombre;
+    let apellido = req.body.apellido;
+    let email = req.body.email;
+    let contrasena = req.body.contrasena;
+    let telefono = req.body.telefono;
+    let dni = req.body.dni;
+    let direccion = req.body.direccion;
+    const emailExp = new RegExp(/^([\d\w_\.-]+)@([\d\w\.-]+)\.([\w\.]{3})$/);
+    const nameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const unNameExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    const telfExp = new RegExp(/^\d{9}$/);
+    const dniExp = new RegExp(/^\d{8}[a-zA-Z]$/);
+    const passExp = new RegExp(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&amp;])([A-Za-z\d$@$!%*?&amp;]|[^ ]){8,15}$/
+    );
+    const direccionExp = new RegExp(/^([A-Za-z]{1,15})$/);
+    if (
+      !emailExp.test(email) ||
+      !nameExp.test(nombre) ||
+      !unNameExp.test(apellido) ||
+      !dniExp.test(dni) ||
+      !passExp.test(contrasena) ||
+      !telfExp.test(telefono) ||
+      !direccionExp.test(direccion)
+    ) {
+      console.log(“campos incorrectos”); //renderizar una pagina de campos incorrectos
+    } else {
+      bcrypt.hash(contrasena, 10, (err, palabraSecretaEncriptada) => {
+        if (err) {
+          console.log(“Error hasheando:“, err);
+        } else {
+          console.log(“Y hasheada es: ” + palabraSecretaEncriptada);
+          palabraEncriptada = palabraSecretaEncriptada;
+          let insertQuery = `INSERT INTO Usuarios
+       (
+           nombre, apellido, dni ,email, direccion, telefono, contrasena
+       )
+       VALUES
+       (
+           ?, ?, ?, ?, ?, ?, ?
+       )`;
+          let query = mysql.format(insertQuery, 
+            [
+            nombre,
+            apellido,
+            dni,
+            email,
+            direccion,
+            telefono,
+            palabraEncriptada
+          ]);
+          connection.query(query, (err, data) => {
+            if (err) throw err;
+            console.log(data);
+          });
+        }
+        res.send(“Registro completado”);
+      });
+      //  let obj = { dni: req.body.dni }
+      //   res.render(“index”, {
+      //     dni: [obj]
+      //     // usuarioRegistrado: “Usuario registrado correctamente”,
+      // })
+    }
+  },
+  login: (req, res) => {
+    loginEmail = req.body.userLog;
+    passLog = req.body.passLog;
+    let nameCorrect = `SELECT email,contrasena FROM Usuarios where email = ‘${loginEmail}’`;
+    connection.query(nameCorrect, (err, rows) => {
+      if (err) throw err;
+      console.log(‘Usuario: \n’, rows);
+      bcrypt.compare(passLog, rows[0].contrasena).then(function (result) {
+        // result == true
+        if (result &amp;&amp; rows[0].email == loginEmail) {
+          console.log(“Usuario correcto”);
+          res.send(“Usuario correcto”);
+        } else {
+          console.log(“Usuario incorrecto”);
+        }
+      }
+      )
+    }
+    )
+  }
+}
+module.exports = user;
+
+
+
+
+
+
+
+
+
+*/
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#admin">admin</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#Bienvenido">Bienvenido</a></li><li><a href="global.html#Cbusquedas">Cbusquedas</a></li><li><a href="global.html#Ccarrousel">Ccarrousel</a></li><li><a href="global.html#Ccontacto">Ccontacto</a></li><li><a href="global.html#Cdescapotable">Cdescapotable</a></li><li><a href="global.html#Cgrid">Cgrid</a></li><li><a href="global.html#Clogin">Clogin</a></li><li><a href="global.html#Cnavbar">Cnavbar</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Mon Jul 25 2022 15:05:09 GMT+0200 (hora de verano de Europa central)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 
 //CONEXION CON MONGODB
-
+/**
+ * const mongo comentada?
+ */
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 const mydb = "rentacar";
@@ -10,7 +12,7 @@ const url = "mongodb://localhost:27017/";
 
 /* 
 Ahora el coche seleccionado ya tienes las fechas en su JSON, ahora como en la pantalla 3.5 de excalidraw
-hay que mostrarle el JSON entero.
+hay que mostrarle el JSON entero. vale
 */
 
 //Al confirmar se selecciona ese vehiculo con las fechas y lugares seleccionados (que están ya en su JSON)

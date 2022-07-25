@@ -4,7 +4,10 @@ import Cfooter from './componentes/Cfooter';
 import MainComponent from './componentes/Main';
 import { BrowserRouter } from "react-router-dom";
 import Ccarrousel from './componentes/Ccarrousel';
-
+/**
+ * 
+ * @returns El renderizado principal de los componentes que queramos que estén en todas las páginas.
+ */
 function App() {
   return (
     

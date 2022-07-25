@@ -4,13 +4,14 @@ import { useState,useEffect } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 
 
-
+/**
+ * Function "Busquedas" que realmente es un componente
+ * @returns Un botón.
+ *Al darle a este boton lo que quiero es que se haga la busqueda en mongo y que se me muestre en una pagina nueva que se llame RESULTADOS como el endppoinbt del back.
+*/
 const Cbusquedas = () => {
 
    
-
-
-
   return (
 
       <div className="col-12">

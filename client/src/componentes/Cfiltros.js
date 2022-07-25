@@ -11,15 +11,10 @@ import { Link,useNavigate } from 'react-router-dom';
 const Cfiltros = () => {
 
 /* aqui tienen que aparecer los resultados tras darle al boton de buscar, joder */
-const buscar = () => {
-
-
-
+  const buscar = () => {
 
 
 }
-
-
     
   
     return (

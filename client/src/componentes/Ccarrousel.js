@@ -1,7 +1,10 @@
 import React from "react";
 
 
-
+/**
+ * 
+ * @returns Un carrousel con 3 fotos.
+ */
 const Ccarrousel = () => {
    
 

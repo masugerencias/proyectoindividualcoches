@@ -7,7 +7,10 @@ import { useState, useEffect } from 'react';
 
 
 
-
+/**
+ * 
+ * @returns {json} Que son todos los coches mapeados en tarjetas de bootstrap-react al acceder a la página en cuestión, ningún filtro aplicado.
+ */
 const Cgrid=()=>{
   const [todoscoches, setTodoscoches] = useState("");
 
