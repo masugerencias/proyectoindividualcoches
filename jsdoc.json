@@ -1,0 +1,17 @@
+{
+    "plugins":[],
+    "source": {
+        "include":["controllers","client","Tripulaciones.js"],
+        "includePattern":".js$",
+        "excludePattern":"(node_modules|docs|confirmed-user)"
+    },
+    "template":{
+        "cleverLinks":false,
+        "monospaceLinks": false
+    },
+    "opts":{
+        "recurse":"true",
+        "destination":"./documentacion"
+    }
+}
+

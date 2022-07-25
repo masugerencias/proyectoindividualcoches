@@ -3,7 +3,10 @@ import { useState, useEffect } from 'react';
 import { Card, Button, Form } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
-
+/**
+ * 
+ * @returns Retorna unas tarjetas mapeadas con el resultado de la búsqueda en mongo de coches descapotables o no descapotables.
+ */
 const Cdescapotable = () => {
 
   const [descapotable, setDescapotable] = useState("");

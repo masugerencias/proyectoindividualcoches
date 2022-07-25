@@ -1,6 +1,8 @@
 
 //CONEXION CON MONGODB
-
+/**
+ * const mongo comentada?
+ */
 const mongo = require('mongodb');
 const MongoClient = mongo.MongoClient;
 const mydb = "rentacar";

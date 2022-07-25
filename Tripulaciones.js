@@ -1,3 +1,35 @@
+/**
+
+ * @fileoverview Menú aprMenu, desplegable con efecto expansión suavizado
+
+ *
+
+ * @version                               2.2
+
+ *
+
+ * @author                 César Krall <cesarkrall@aprenderaprogramar.com>
+
+ * @copyright           aprenderaprogramar.com
+
+ *
+
+ * History
+
+ * v2.2 – Se mejoró el efecto de expansión de los submenús dándole efecto aceleración
+
+ * v2.0 – Se evitó que quedaran supersupuestos textos de submenús
+
+ * v1.1 – Se mejoró la compatibilidad con navegadores Opera
+
+ * ----
+
+ * La primera versión de aprMenu fue escrita por Karl Monitrix
+
+        */
+
+
+
 /* 
 const Cpuertas = () => {
 

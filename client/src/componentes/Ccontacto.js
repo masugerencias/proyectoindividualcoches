@@ -1,7 +1,10 @@
 import React
  from "react"
 
-
+/**
+ * Es un componente que sólo consta de un formulario de contacto.
+ * @returns Un formulario de contacto
+ */
 const Ccontacto = () =>{
 return(
     <form>

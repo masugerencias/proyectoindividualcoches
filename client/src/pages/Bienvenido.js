@@ -5,7 +5,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 import Clogin from "../componentes/Clogin";
 /* import { Link, useNavigate } from 'react-router-dom'; */
 
-
+/**
+ * 
+ * @returns Retorna un mapeo de la informacion personal del usuario logueado, su informacion personal y si es administrador o no.
+ */
 const Bienvenido = () => {
     const [infousuario, setInfousuario] = useState("");
 
